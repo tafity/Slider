@@ -1,4 +1,5 @@
 const track = document.querySelector ('.container');
+const movement = document.querySelector ('.content_p_2_')
 const slides = Array.from(track.children);
 const nextButton = document.querySelector('.carousel-button.next');
 const prevButton = document.querySelector('.carousel-button.prev');
@@ -6,42 +7,43 @@ const dotsNav = document.querySelector ('.dots');
 const dots = Array.from(dotsNav.children);
 const namesNav = document.querySelector ('.names');
 const names = Array.from(namesNav.children);
+const vectors = document.querySelector ('.vectorss');
 
+
+let direction;
 const moveToSlide = (track, currentSlide, targetSlide)=> {
+  vectors.style.marginTop = '-280px';
+  /*if (direction === -1){
+    track.appendChild(track.firstElementChild);
+  } else if (direction === 1){
+    track.prepend(track.lastElementChild)
+  }*/
   slides.forEach (slide => {
     currentSlide.classList.remove('current-slide');
     currentSlide.style.opacity = "0";
     targetSlide.classList.add('current-slide');
     targetSlide.style.opacity = '1';
   });
- 
 }
-/*const updateDots = (currentDot, targetDot) => {
-  currentDot.classList.remove ('current-dot');
-  targetDot.classList.add ('current-slide');
-  
-}*/
 
 nextButton.addEventListener('click', e => {
   if (track <= 0) return;
+  //direction = -1;
   const currentSlide = track.querySelector ('.current-slide');
   const nextSlide = currentSlide.nextElementSibling;
-  console.log (nextSlide.nextElementSibling);
-
-  if (!slides[2].nextElementSibling) {slides[1].closest}
+  track.appendChild(track.firstElementChild);
   moveToSlide(track, currentSlide, nextSlide);
-
-
 })
-
 prevButton.addEventListener ('click', e => {
   if (track <= 0) return;
   const currentSlide = track.querySelector ('.current-slide');
-  const prevSlide = currentSlide.previousElementSibling;
-  //if (imageIndex >= slides.length) {imageIndex = 0;}
+  let prevSlide = currentSlide.previousElementSibling;
+  console.log (prevSlide)
+  track.prepend(track.lastElementChild);
   moveToSlide(track, currentSlide, prevSlide);
 
 })
+console.log (track.prepend)
 
 dotsNav.addEventListener('click', e => {
   const targetDot = e.target.closest('button');
@@ -51,7 +53,11 @@ dotsNav.addEventListener('click', e => {
   console.log (currentDot)
   const targetIndex = dots.findIndex(dot => dot === targetDot);
   const targetSlide = slides[targetIndex];
+  slides.forEach (slide => {
+    currentSlide.style.marginTop = '-280px';
+  })
   moveToSlide(track, currentSlide, targetSlide);
+  
   //updateDots (currentDot, targetDot);
   
 });

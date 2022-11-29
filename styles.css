@@ -16,20 +16,23 @@ body {
    margin: 0 auto;
    background-color: black;
    
-   
 }
 .content_p_2_ {
+    height: 100%;
+   
+    
 }
 .container {
-     
+    margin-top: -120px; 
 
 }
 .completed {
-     
+     margin-top: -10px
 }
 .container_small {
-    margin-top: -763px;
     opacity:0;
+    height: 550px;
+    margin-top: -50px
 }
 
 .slider {
@@ -71,10 +74,83 @@ body {
     font-size: 14px;
     line-height: 19px;
     text-transform: uppercase;
-    padding: 107px 1px 53px 626px;
+    padding: 107px 1px 20px 626px;
     white-space: nowrap;
 
 }
+.__names1 {
+    text-decoration-line: underline;
+    color: #E3B873;
+    font-family: 'Yeseva One';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 19px;
+    text-transform: uppercase;
+    padding: 107px 1px 20px 60px;
+    white-space: nowrap;
+}
+.__namess {
+    text-decoration-line: underline;
+    color: #E3B873;
+    font-family: 'Yeseva One';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 19px;
+    text-transform: uppercase;
+    padding: 107px 1px 20px 60px;
+    white-space: nowrap;
+}
+._names2 {
+    font-family: 'Yeseva One';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 19px;
+    text-transform: uppercase;
+    color: rgba(255, 255, 255, 0.3);
+    padding-top: 107px;
+    padding-left: 628px;
+    white-space: nowrap;  
+}
+._names2_ {
+    font-family: 'Yeseva One';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 19px;
+    text-transform: uppercase;
+    color: rgba(255, 255, 255, 0.3);
+    padding-top: 107px;
+    padding-left: 60px;
+    white-space: nowrap;  
+}
+._names-2 {
+    font-family: 'Yeseva One';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 19px;
+    text-transform: uppercase;
+    color: rgba(255, 255, 255, 0.3);
+    padding-top: 107px;
+    padding-left: 626px;
+    white-space: nowrap;  
+}
+._names-2_ {
+    font-family: 'Yeseva One';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 19px;
+    text-transform: uppercase;
+    color: rgba(255, 255, 255, 0.3);
+    padding-top: 107px;
+    padding-left: 60px;
+    white-space: nowrap;  
+}
+
     .__names:hover {
     text-decoration-line: underline;
     color: #E3B873;
@@ -88,7 +164,7 @@ body {
     cursor: pointer;
     }
 .names {
-    padding: 107px 1px 53px 55px;
+    padding: 107px 1px 20px 60px;
 }
 ._names  {
     font-family: 'Yeseva One';
@@ -253,7 +329,6 @@ body {
     white-space: nowrap;
 }
  .track {
-    width: 686px;
     right: 70px;
     width: 100%;
  }
@@ -264,10 +339,6 @@ body {
 }
 .slide.current-slide {
     z-index: 1;
-}
-.img:hover {
-    transition: 250ms ease-in;
-    
 }
 .images {
     position: relative;
@@ -280,7 +351,7 @@ body {
 }
 
 .vectorss {
-   margin-top: 508px;
+   margin-top: -240px;
 }
 
 .circle1 {
