@@ -64,6 +64,7 @@ body {
 .names {
     list-style: none;
     display: flex;
+    cursor: pointer;
 }
 .__names {
     text-decoration-line: underline;
@@ -74,9 +75,10 @@ body {
     font-size: 14px;
     line-height: 19px;
     text-transform: uppercase;
-    padding: 107px 1px 20px 626px;
+    margin: 146px 1px 40px 626px;
     white-space: nowrap;
-
+    background-color: inherit;
+    border: none;
 }
 .__names1 {
     text-decoration-line: underline;
@@ -87,8 +89,10 @@ body {
     font-size: 14px;
     line-height: 19px;
     text-transform: uppercase;
-    padding: 107px 1px 20px 60px;
+    margin: 146px 1px 40px 60px;
     white-space: nowrap;
+    background-color: inherit;
+    border: none;
 }
 .__namess {
     text-decoration-line: underline;
@@ -99,8 +103,10 @@ body {
     font-size: 14px;
     line-height: 19px;
     text-transform: uppercase;
-    padding: 107px 1px 20px 60px;
+    margin: 146px 1px 40px 60px;
     white-space: nowrap;
+    background-color: inherit;
+    border: none;
 }
 ._names2 {
     font-family: 'Yeseva One';
@@ -110,9 +116,12 @@ body {
     line-height: 19px;
     text-transform: uppercase;
     color: rgba(255, 255, 255, 0.3);
-    padding-top: 107px;
-    padding-left: 628px;
+    margin-top: 107px;
+    margin-left: 628px;
     white-space: nowrap;  
+    cursor: pointer;
+    background-color: inherit;
+    border: none;
 }
 ._names2_ {
     font-family: 'Yeseva One';
@@ -122,9 +131,12 @@ body {
     line-height: 19px;
     text-transform: uppercase;
     color: rgba(255, 255, 255, 0.3);
-    padding-top: 107px;
-    padding-left: 60px;
-    white-space: nowrap;  
+    margin-top: 107px;
+    margin-left: 40px;
+    white-space: nowrap; 
+    cursor: pointer;
+    background-color: inherit;
+    border: none; 
 }
 ._names-2 {
     font-family: 'Yeseva One';
@@ -134,9 +146,12 @@ body {
     line-height: 19px;
     text-transform: uppercase;
     color: rgba(255, 255, 255, 0.3);
-    padding-top: 107px;
-    padding-left: 626px;
-    white-space: nowrap;  
+    margin-top: 107px;
+    margin-left: 626px;
+    white-space: nowrap; 
+    cursor: pointer; 
+    background-color: inherit;
+    border: none;
 }
 ._names-2_ {
     font-family: 'Yeseva One';
@@ -146,9 +161,12 @@ body {
     line-height: 19px;
     text-transform: uppercase;
     color: rgba(255, 255, 255, 0.3);
-    padding-top: 107px;
-    padding-left: 60px;
+    margin-top: 107px;
+    margin-left: 40px;
     white-space: nowrap;  
+    cursor: pointer;
+    background-color: inherit;
+    border: none;
 }
 
     .__names:hover {
@@ -164,7 +182,10 @@ body {
     cursor: pointer;
     }
 .names {
-    padding: 107px 1px 20px 60px;
+    margin: 107px 1px 20px 40px;
+    background-color: inherit;
+    border: none;
+
 }
 ._names  {
     font-family: 'Yeseva One';
@@ -174,10 +195,13 @@ body {
     line-height: 19px;
     text-transform: uppercase;
     color: rgba(255, 255, 255, 0.3);
-    padding-top: 107px;
-    padding-left: 60px;
+    margin-top: 107px;
+    margin-left: 60px;
     white-space: nowrap;
+    background-color: inherit;
+    border: none;
 }
+
 ._names:hover {
     text-decoration-line: underline;
     color: #E3B873;
@@ -189,7 +213,66 @@ body {
     text-transform: uppercase;
     white-space: nowrap;
     cursor: pointer;
+    background-color: inherit;
+    border: none;
 }
+._names2:hover {
+    text-decoration-line: underline;
+    color: #E3B873;
+    font-family: 'Yeseva One';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 19px;
+    text-transform: uppercase;
+    white-space: nowrap;
+    cursor: pointer;
+    background-color: inherit;
+    border: none;
+}
+._names2_:hover {
+    text-decoration-line: underline;
+    color: #E3B873;
+    font-family: 'Yeseva One';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 19px;
+    text-transform: uppercase;
+    white-space: nowrap;
+    cursor: pointer;
+    background-color: inherit;
+    border: none;
+}
+._names-2:hover {
+    text-decoration-line: underline;
+    color: #E3B873;
+    font-family: 'Yeseva One';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 19px;
+    text-transform: uppercase;
+    white-space: nowrap;
+    cursor: pointer;
+    background-color: inherit;
+    border: none;
+}
+._names-2_:hover {
+    text-decoration-line: underline;
+    color: #E3B873;
+    font-family: 'Yeseva One';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 19px;
+    text-transform: uppercase;
+    white-space: nowrap;
+    cursor: pointer;
+    background-color: inherit;
+    border: none;
+}
+
 ._names_:hover {
     text-decoration-line: underline;
     color: #E3B873;
@@ -201,6 +284,8 @@ body {
     text-transform: uppercase;
     white-space: nowrap;
     cursor: pointer;
+    background-color: inherit;
+    border: none;
     
 }
 .completed {
@@ -351,7 +436,7 @@ body {
 }
 
 .vectorss {
-   margin-top: -240px;
+   margin-top: -480px;
 }
 
 .circle1 {

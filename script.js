@@ -12,65 +12,85 @@ const vectors = document.querySelector ('.vectorss');
 
 let direction;
 const moveToSlide = (track, currentSlide, targetSlide)=> {
-  vectors.style.marginTop = '-280px';
-  /*if (direction === -1){
-    track.appendChild(track.firstElementChild);
-  } else if (direction === 1){
-    track.prepend(track.lastElementChild)
-  }*/
-  slides.forEach (slide => {
     currentSlide.classList.remove('current-slide');
     currentSlide.style.opacity = "0";
     targetSlide.classList.add('current-slide');
     targetSlide.style.opacity = '1';
-  });
 }
 
 nextButton.addEventListener('click', e => {
   if (track <= 0) return;
-  //direction = -1;
   const currentSlide = track.querySelector ('.current-slide');
   const nextSlide = currentSlide.nextElementSibling;
+  console.log (nextSlide)
   track.appendChild(track.firstElementChild);
+  if (slides[0]){
+    vectors.style.marginTop= '-580px'}
+  if (slides[1]){
+    slides[1].style.marginTop = '40px'
+    vectors.style.marginTop= '-580px'}
+    if (slides[2]){
+      slides[2].style.marginTop = '40px'
+      vectors.style.marginTop= '-580px'
+    }   
   moveToSlide(track, currentSlide, nextSlide);
 })
 prevButton.addEventListener ('click', e => {
   if (track <= 0) return;
-  const currentSlide = track.querySelector ('.current-slide');
-  let prevSlide = currentSlide.previousElementSibling;
-  console.log (prevSlide)
-  track.prepend(track.lastElementChild);
-  moveToSlide(track, currentSlide, prevSlide);
-
-})
-console.log (track.prepend)
+  //const currentSlide = track.querySelector ('.current-slide');
+  //const prevSlide = currentSlide.previousSibling;
+  //console.log (prevSlide)
+  //track.prepend(track.lastElementChild);
+  //moveToSlide(track, currentSlide);//, prevSlide);
+});
 
 dotsNav.addEventListener('click', e => {
   const targetDot = e.target.closest('button');
   if (!targetDot) return;
   const currentSlide = track.querySelector ('.current-slide');
   const currentDot = dotsNav.getElementsByClassName ('.current-slide');
-  console.log (currentDot)
   const targetIndex = dots.findIndex(dot => dot === targetDot);
   const targetSlide = slides[targetIndex];
-  slides.forEach (slide => {
-    currentSlide.style.marginTop = '-280px';
-  })
-  moveToSlide(track, currentSlide, targetSlide);
-  
+  console.log(targetSlide)
+  const image = document.querySelector('.images');
+  if (slides[0]){
+    image.style.display = 'flex'
+    slides[0].style.marginTop = '-200px';
+  }
+  if (slides[1]){
+    slides[1].style.marginTop = '-410px'
+    slides[1].style.height = '720px'
+    slides[0].style.opacity = '0'
+    slides[2].style.opacity = '0'
+    vectors.style.marginTop = '-170px'
+}
+if (slides[2]){
+  slides[2].style.marginTop = '-830px'
+  slides[2].style.height = '1280px'
+  slides[0].style.opacity = '0'
+  slides[1].style.opacity = '0'
+  vectors.style.marginTop = '-170px'
+}
+  moveToSlide(track, currentSlide, targetSlide); 
   //updateDots (currentDot, targetDot);
-  
 });
-/*track.addEventListener (slides, () => {
-  if (slides[counter].id === 'lastClone') {
-    counter = slides.length - 2;
+/*namesNav.addEventListener ('click', e => {
+  const targetName = e.target.closest('button');
+  if(!targetName) return;
+  const currentSlide = track.querySelector ('.current-slide');
+  const currentName = namesNav.getElementsByClassName ('.current-slide');
+  const targetIndex = names.findIndex(name => name === targetName);
+  console.log(targetIndex)
+  const targetSlide = slides[targetIndex];
+  if (slides[1]){
+    slides[1].style.marginTop = '-510px';
+    slides[1].style.height = '720px';
+    vectors.style.marginTop = '-210px'
   }
-  if (slides[counter].id === 'firstClone') {
-    counter = slides.length - counter;
+  if (slides[2]){
+    slides[2].style.marginTop = '-830px';
+    slides[2].style.height = '1020px';
+    vectors.style.marginTop = '90px'
   }
-})
-if (slides[1]=== "current-slide" ) {
-  cityName.innertext ="Sochi Thieves"
-  apartmentArea.innertext = "105 m2"
-  repairTime.innertext = "4 months"
-}*/
+  moveToSlide(track, currentSlide, targetSlide);
+})*/
