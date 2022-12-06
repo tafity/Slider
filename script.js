@@ -74,7 +74,7 @@ if (slides[2]){
   moveToSlide(track, currentSlide, targetSlide); 
   //updateDots (currentDot, targetDot);
 });
-/*namesNav.addEventListener ('click', e => {
+namesNav.addEventListener ('click', e => {
   const targetName = e.target.closest('button');
   if(!targetName) return;
   const currentSlide = track.querySelector ('.current-slide');
@@ -85,7 +85,7 @@ if (slides[2]){
   if (slides[1]){
     slides[1].style.marginTop = '-510px';
     slides[1].style.height = '720px';
-    vectors.style.marginTop = '-210px'
+    vectors.style.marginTop = '-410px'
   }
   if (slides[2]){
     slides[2].style.marginTop = '-830px';
@@ -93,4 +93,4 @@ if (slides[2]){
     vectors.style.marginTop = '90px'
   }
   moveToSlide(track, currentSlide, targetSlide);
-})*/
+})
